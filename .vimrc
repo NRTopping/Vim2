@@ -20,6 +20,7 @@
 "   - Status
 "   - Editing
 "   - Spell Checking
+"   - Plugin Settings
 "   - Misc
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -273,6 +274,12 @@ map <leader>za zg
 map <leader>s? z=
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Nerd tree toggle
+map <leader>d :NERDTreeToggle<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open a buffer for scribble
@@ -284,4 +291,9 @@ map <leader>md :e ~/buffer.md<CR>
 " Toggle past mode on and off
 map <leader>o :setlocal paste!<CR>
 
+" iterm2 mouse scrolling
+if has ('mouse_sgr')
+  set ttymouse=sgr
+endif
+set mouse=nicr
 
